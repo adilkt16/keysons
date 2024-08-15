@@ -286,6 +286,51 @@ section.third-company div.company-data p {
   margin: 20px 0;
   font-size: 14px;
 }
+#both-with-map div.map-full-containers {
+  display: flex;
+}
+#both-with-map div.map-full-containers div.left-map {
+  background-color: rgba(35, 127, 193, 0.1);
+  padding: 50px 50px 30px 100px;
+  width: 50%;
+  border-radius: 30px 0px 0px 30px;
+}
+#both-with-map div.map-full-containers div.left-map h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+#both-with-map div.map-full-containers div.left-map p {
+  color: gray;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+#both-with-map div.map-full-containers div.left-map ul {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 10px;
+}
+#both-with-map div.map-full-containers div.left-map ul li div {
+  width: 20px;
+  display: block;
+  margin-right: 10px;
+}
+#both-with-map div.map-full-containers div.left-map ul li h5 {
+  font-weight: 500;
+}
+#both-with-map div.map-full-containers div.left-map ul li a {
+  display: inline-block;
+  color: gray;
+}
+#both-with-map div.map-full-containers div.right-map {
+  width: 50%;
+}
+#both-with-map div.map-full-containers div.right-map iframe {
+  border-radius: 0px 30px 30px 0px;
+  width: 100%;
+  height: 100%;
+}
+
 footer {
   background-color: #1D1E18;
   color: #fff;
@@ -1234,6 +1279,52 @@ li.from-480-display {
     height: 80%;
   }
 }
+div.for_gradient_pharma {
+  background-image: url(../assets/images/pharma.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#spotlight {
+  background-color: #E8E6E7;
+  padding: 0 0px 0 100px;
+  margin-bottom: 50px;
+  background: linear-gradient(90deg, rgba(242, 157, 64, 0.8) 0%, rgba(0, 0, 0, 0.5) 100%);
+  height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+}
+#spotlight ul {
+  display: flex;
+  align-items: center;
+}
+#spotlight ul li.spot-content {
+  width: 100%;
+}
+#spotlight ul li.spot-content h1 {
+  color: #fff;
+  font-size: 64px;
+  font-weight: 900;
+}
+#spotlight ul li.spot-content h1 span {
+  font-size: 64px;
+  font-weight: 900;
+  color: #fff;
+}
+#spotlight ul li.spot-content p {
+  color: #fff;
+  width: 60%;
+  margin: 24px 0;
+}
+#spotlight ul li.spot-content a {
+  background-color: #fff;
+  color: rgba(242, 157, 64, 0.8);
+  padding: 10px 30px;
+  display: inline-block;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
 * {
   margin: 0;
   padding: 0;

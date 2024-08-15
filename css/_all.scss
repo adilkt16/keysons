@@ -486,6 +486,71 @@ section.third-company {
 }
 
 
+#both-with-map {
+
+    section.wrapper {}
+
+    div.map-full-containers {
+        display: flex;
+
+        div.left-map {
+            background-color: rgba(35, 127, 193, 0.1);
+            padding: 50px 50px 30px 100px;
+            width: 50%;
+            border-radius: 30px 0px 0px 30px;
+
+            h3 {
+                font-size: 20px;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+
+            p {
+                color: gray;
+                font-size: 15px;
+                margin-bottom: 20px;
+            }
+
+            ul {
+                display: flex;
+                align-items: flex-start;
+                margin-top: 10px;
+
+                li {
+                    div {
+                        width: 20px;
+                        display: block;
+                        margin-right: 10px;
+
+                        img {}
+                    }
+
+                    h5 {
+                        font-weight: 500;
+                    }
+
+                    a {
+                        display: inline-block;
+                        color: gray;
+                    }
+
+                    p {}
+                }
+            }
+        }
+
+        //left-map ended
+        div.right-map {
+            width: 50%;
+
+            iframe {
+                border-radius: 0px 30px 30px 0px;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
 
 
 footer {

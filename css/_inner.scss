@@ -1,0 +1,62 @@
+div.for_gradient_pharma {
+    background-image: url(../assets/images/pharma.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#spotlight {
+    background-color: #E8E6E7;
+    padding: 0 0px 0 100px;
+    margin-bottom: 50px;
+    background: linear-gradient(90deg, rgba(242, 157, 64, 0.8) 0%, rgba(0, 0, 0, 0.5) 100%);
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+
+
+    ul {
+        display: flex;
+        align-items: center;
+
+        li.spot-content {
+            width: 100%;
+
+            h1 {
+                color: #fff;
+
+                span {
+                    font-size: 64px;
+                    font-weight: 900;
+                    color: #fff;
+                }
+
+                font-size: 64px;
+                font-weight: 900;
+            }
+
+            p {
+                color: #fff;
+                width: 60%;
+                margin: 24px 0;
+            }
+
+            a {
+                background-color: #fff;
+                color: rgba(242, 157, 64, 0.8);
+                padding: 10px 30px;
+                display: inline-block;
+                border-radius: 10px;
+                margin-top: 10px;
+            }
+        }
+
+        // li.spot-image {
+        //     width: 60%;
+        //     div {
+        //         img {}
+        //     }
+        // }
+    }
+}
+
+//#spotlight ended
