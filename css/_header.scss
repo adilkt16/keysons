@@ -1,0 +1,210 @@
+header {
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 20px 100px;
+    transition: all 0.50s ease;
+}
+
+a img.close-at-first {
+    display: none;
+}
+
+.logo {
+    display: inline-block;
+}
+
+.logo img {
+    width: 140px;
+    margin-right: 3px;
+    transition: all 0.50 ease;
+}
+
+.navbarr {
+    display: flex;
+    transition: all 0.50s ease;
+}
+
+.navbarr a {
+    font-size: 16px;
+    color: gray;
+    font-weight: 500;
+    padding: 5px 0;
+    margin: 0px 15px;
+    transition: all 0.50s ease;
+}
+
+.navbarr a:hover {
+    color: var(--main-color);
+}
+
+.navbarr a.active {
+    color: var(--main-color);
+}
+
+.mainn {
+    display: flex;
+    align-items: center;
+}
+
+div.mainn a {
+    margin-right: 20px;
+    transition: all 0.50s ease;
+    width: 20px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.mainn a:hover {
+    color: var(--main-color);
+}
+
+#menu-icon {
+    font-size: 35px;
+    color: #000;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+
+li.from-480-display {
+    display: none;
+}
+
+@media all and (max-width:1200px) {
+    header {
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .navbarr {
+        display: none;
+        /* Initially hidden on small screens */
+        position: absolute;
+        top: 7%;
+        right: -100%;
+        width: 270px;
+        height: 100vh;
+        background-color: #333;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        transition: all 0.50s ease;
+    }
+
+    .navbarr.activated {
+        display: flex;
+        /* Makes the menu visible */
+        right: 0;
+    }
+
+    .navbarr a {
+        display: block;
+        margin: 12px 0;
+        padding: 0 25px;
+        color: #fff;
+        transition: all 0.50 ease;
+    }
+
+    .navbarr a:hover {
+        color: wheat;
+        transform: translateX(7px);
+    }
+
+    .navbarr a.active {
+        color: wheat;
+    }
+
+    //from here mine
+    .logo img {
+        width: 120px;
+        margin-right: 0px;
+        transition: all 0.5 ease;
+    }
+
+    header {
+        padding: 10px 60px;
+    }
+
+    div.mainn a {
+        margin-right: 35px;
+    }
+
+
+}
+
+@media all and (max-width:768px) {
+    header {
+        padding: 10px 40px;
+    }
+
+    div.mainn a {
+        margin-right: 25px;
+    }
+}
+
+@media all and (max-width:640px) {
+    header {
+        padding: 6px 25px;
+    }
+
+    div.mainn a {
+        margin-right: 20px;
+    }
+
+    .logo img {
+        width: 100px;
+        margin-right: 0px;
+    }
+}
+
+@media all and (max-width: 480px) {
+    li.from-480-display {
+        display: unset;
+    }
+
+    header div.mainn a {
+        display: none;
+    }
+
+    li.from-480-display {
+        background-color: #fff;
+        margin-top: 15px;
+
+        div.mainn-from-480 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+    }
+
+    .navbarr a {
+        font-size: 15px;
+        margin: 12px 0;
+    }
+}
+
+@media all and (max-width:360px) {
+    .navbarr a {
+        font-size: 14px;
+        margin: 12px 0;
+
+        img {
+            width: 80%;
+            height: 80%;
+        }
+    }
+
+}
